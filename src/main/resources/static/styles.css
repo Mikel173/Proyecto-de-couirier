@@ -1,0 +1,123 @@
+body {
+    zoom: 110%;
+  }
+
+#graph-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-60%, -20%);
+    width: 700px; /* Ajusta según el tamaño de tu imagen */
+    height: 700px; /* Ajusta según el tamaño de tu imagen */
+}
+
+svg {
+    width: 100%;
+    height: 100%;
+}
+
+.link {
+    stroke: #2ecc71;
+    stroke-width: 2px;
+}
+
+.node {
+    fill: #3498db;
+    stroke: #fff;
+    stroke-width: 2px;
+}
+
+  #sidebar {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    background-color: #0080ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #sidebar a {
+    padding: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #000;
+    display: block;
+    width: 100%;
+  }
+  
+  #sidebar a:hover {
+    background-color: #d1d1d1;
+  }
+  
+  #logo-container {
+    text-align: center;
+    padding: 15px;
+  }
+#logo-container a:hover {
+  background-color: transparent; /* Evita que el fondo cambie al pasar el ratón sobre el logo */
+}
+
+  #sidebar {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    background-color: #1877d6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .RegistroE {
+    margin-left: 250px; /* Ajusta según el ancho de tu posible sidebar */
+    padding: 20px; /* Ajusta según tus necesidades */
+  }
+
+  .RegistroP {
+    margin-left: 250px; /* Igual al ancho del #sidebar */
+    padding: 20px; /* Ajusta según tus necesidades */
+  }
+
+  .table th, .table td {
+    text-align: center;
+  }
+
+  .BarraEstado {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border: 1px solid #ccc;
+}
+
+.SelecionarP {
+    width: calc(70% - 350px); /* El 70% del ancho total menos el ancho del sidebar izquierdo */
+    margin-top: 20px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 250px; /* Ancho del sidebar izquierdo */
+    transform: translate(-1%, 0%);
+    background-color: #f8f9fa;
+    border: 0px solid #ccc;
+    padding: 20px;
+}
+
+@media (max-width: 767.98px) {
+    .SelecionarP {
+        width: 100%;
+        left: 0;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+
+

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <title>Document</title>
+</head>
+<body style="background-image: url('/ciudad.png'); background-size: cover; background-position: center; position: relative;">
+
+<div id="sidebar" style="z-index: 2; position: fixed;">
+    <div id="logo-container">
+        <a href="index.html"> <!-- Agregamos el enlace aquí -->
+            <img src="logo.png" alt="Logo de la empresa" style="max-width: 100%;">
+        </a>
+    </div>
+
+    <a href="RegistrarPaquete.html">Registrar Paquete</a>
+    <a href="Envios.html">Envíos</a>
+    <a href="RealizarEnvio.html">Realizar Envíos</a>
+</div>
+
+<div id="graph-container" style="position: relative; z-index: 1;">
+    <svg width="700" height="700"></svg>
+</div>
+
+<div class="BarraEstado">
+    <h2>Estado del Envío</h2>
+    <p>Estado: En tránsito</p>
+    <div id="detallesPaquete">
+        <p>Detalles del paquete:</p>
+        <ul>
+            <li>Origen: <span id="detalleOrigen">Centro Histórico</span></li>
+            <li>Destino: <span id="detalleDestino">Sopocachi</span></li>
+            <li>Distancia: <span id="detalleDistancia">7 km</span></li>
+            <li>Contenido: <span id="detalleContenido">Celualares</span></li>
+        </ul>
+    </div>
+</div>
+
+<div class="SelecionarP container mt-4">
+    <h2>Lista de Paquetes</h2>
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Contenido</th>
+            <th>Origen</th>
+            <th>Destino</th>
+            <th>Distancia</th>
+            <th>Acciones</th>
+        </tr>
+        </thead>
+        <tbody>
+
+        <tr>
+        </tr>
+        <!-- Aquí puedes agregar dinámicamente las filas con información de los paquetes -->
+        <!-- Agrega más filas según sea necesario -->
+        </tbody>
+    </table>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
